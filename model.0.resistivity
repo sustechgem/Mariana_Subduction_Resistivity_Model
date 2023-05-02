@@ -1,0 +1,51 @@
+Format:                         mare2dem_1.1                     ! input 
+Model File:                     model.poly           ! input 
+Data File:                      MT_CSEM_data.emdata        ! input 
+Settings File:                  mare2dem.settings                ! input 
+Maximum Iterations:             100                              ! opt. input 
+Bounds Transform:               bandpass                         ! opt. input 
+Global Bounds:                  0.1, 100000                      ! opt. input 
+Roughness Penalty Method:       gradient                         ! opt. input (gradient or first_difference)  
+Roughness Weights (y,z):        3, 1                             ! opt. input (e.g. 3.0,1.0). 
+Penalty Cut Weight:             0.1                              ! opt. input (e.g. 0.1) 
+Roughness With Prejudice:       no                               ! opt. input (yes or no). Yes uses norm: || R(m-m_prej)||^2  
+Min. Gradient Support Weight:   0                                ! opt. input (e.g. 0.01) 0 means no MGS
+Print Level:                    1                                ! opt. input  
+Target Misfit:                  1                                ! require for inversion) 
+Misfit Decrease Threshold:      0.85                             ! opt. input (0 <= n < 1). Iteration ends if RMS < n*Starting_RMS 
+Converge Slowly:                no                               ! opt. input. Target misfit = max(n*Starting_RMS, Target Misfit) for each iteration 
+Log10 Lagrange Value:           5                                ! input/output (required for inversion) 
+Model Roughness:                                                 ! output from inversion 
+Model Misfit:                                                    ! output from inversion 
+Date/Time:                      06-Dec-2021 08:48:51             ! output from inversion 
+Anisotropy:                     isotropic                        ! input 
+Number of regions:              28                               ! input 
+!#        Rho           Param      Lower        Upper         Prej         Weight       
+1         1000          0          0            0             0            0            
+2         0.3           0          0            0             0            0            
+3         3000          0          0            0             0            0            
+4         10            0          0            0             0            0            
+5         1             0          0            0             0            0            
+6         1000          0          0            0             0            0            
+7         10            0          0            0             0            0            
+8         1000          0          0            0             0            0            
+9         30            0          0            0             0            0            
+10        100           0          0            0             0            0            
+11        1             0          0            0             0            0            
+12        100           0          0            0             0            0            
+13        1e+12         0          0            0             0            0            
+14        3000          0          0            0             0            0            
+15        30            0          0            0             0            0            
+16        30            0          0            0             0            0            
+17        30            0          0            0             0            0            
+18        1000          0          0            0             0            0            
+19        30            0          0            0             0            0            
+20        30            0          0            0             0            0            
+21        30            0          0            0             0            0            
+22        30            0          0            0             0            0            
+23        30            0          0            0             0            0            
+24        30            0          0            0             0            0            
+25        30            0          0            0             0            0            
+26        30            0          0            0             0            0            
+27        30            0          0            0             0            0            
+28        30            0          0            0             0            0            
